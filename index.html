@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>machine de Turing</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <div class="principale">
+        <h1>Simulateur d'une machine de Turing</h1>
+        <div class="machine">
+            <span class="ruban"></span>
+        </div>
+        <input id="btnPrev" type="button" value="Etape précédente"/>
+        <input id="btnNext" type="button" value="Etape suivante"/>
+        <input id="btnLecture" type="button" value="Lecture auto"/>
+        <table id="tableTransition">
+            <tr>
+                <th colspan="5">Tableau de transitions</th>
+            </tr>
+            <tr>
+                <th>Etat</th>
+                <th>Lu</th>
+                <th>Ecrire</th>
+                <th>Déplacement</th>
+                <th>Etat suivant</th>
+            </tr>
+        </table>
+        <input type="button" value="Créer un nouvel état" id="btnNouvelEtat"/>
+        <div>
+            <label>ruban initial : </label>
+            <input type="text" id="textAvantTete" placeholder="avant la tête de lecture"><input type="text" id="textTete" maxlength="1" size="1" placeholder="lu"><input type="text" id="textApresTete" placeholder="après la tête de lecture">
+        </div>
+        <input type="button" value="Valider" id="btnValider"/>
+        <p class="centrer" id="message"></p>
+    </div>
+    <script language="javascript" src="script.js"></script>
+</body>
+</html>
+

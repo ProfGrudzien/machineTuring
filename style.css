@@ -1,0 +1,106 @@
+body {
+    font-family: monospace;
+    font-size: 12pt;
+    background-color: white;
+    text-align: center
+}
+
+input[type=button] {
+    height: 40px;
+    width: 150px;
+    text-align: center;
+}
+
+/*input[type=button].nav {*/
+/*    width: 40px;*/
+/*    font-size: 16pt;*/
+/*}*/
+
+input[type=range] {
+    width: 300px;
+}
+
+input[type=text] {
+    margin: 0px;
+    text-align: center;
+}
+
+#textTete {
+    width: 15px;
+}
+
+div {
+    margin: 10px auto;
+}
+
+div.principale {
+    display: inline-block;
+    width: 1000px;
+    padding: 20px;
+    border: 1px solid blue;
+}
+
+div.machine {
+    display: block;
+    width: 600px;
+    height: 24px;
+    margin: 10px auto;
+    border: 1px solid blue;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 20px 0px;
+}
+
+span.ruban span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    border: 1px solid lightgray;
+}
+
+span.lu {
+    background-color: orange;
+}
+
+p {
+    text-align: left;
+}
+
+.centrer {
+    text-align: center;
+}
+
+.erreur{
+    color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.vert {
+    background-color: lightgreen;
+}
+
+.jaune {
+    background-color: yellow;
+}
+
+.no-margin {
+    margin: 0px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 5px auto;
+}
+
+td, th {
+    border: 1px solid blue;
+    padding: 5px;
+}
+
+td.evidence {
+    background-color: yellow;
+}
