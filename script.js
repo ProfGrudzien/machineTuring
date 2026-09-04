@@ -68,10 +68,10 @@ class Ruban {
         }
     }
     getValeur() {
-        return this.teteLecture.span.textContent.replace("\u00a0", "_")
+        return this.teteLecture.span.textContent.replaceAll("\u00a0", "_")
     }
     setValeur(valeur) {
-        this.teteLecture.span.textContent = valeur.replace("_", "\u00a0")
+        this.teteLecture.span.textContent = valeur.replaceAll("_", "\u00a0")
     }
 }
 
