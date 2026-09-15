@@ -179,8 +179,8 @@ function surlignerEtat() {
 
 function reinitialiser(event) {
     if (event.target.value == "Valider") {
-        const apres = document.getElementById("textApresTete").value.replace(" ", "\u00a0").replace("_", "\u00a0")
-        const avant = document.getElementById("textAvantTete").value.replace(" ", "\u00a0").replace("_", "\u00a0")
+        const apres = document.getElementById("textApresTete").value.replaceAll(" ", "\u00a0").replaceAll("_", "\u00a0")
+        const avant = document.getElementById("textAvantTete").value.replaceAll(" ", "\u00a0").replaceAll("_", "\u00a0")
         const lu = document.getElementById("textTete").value.replace(" ", "\u00a0").replace("_", "\u00a0") || "\u00a0"
         if (verifierEntree(avant+lu+apres)) {
             ruban = new Ruban(avant, lu, apres)
